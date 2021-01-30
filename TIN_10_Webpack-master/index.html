@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <form>
+        <h1>Temprature Converter</h1>
+        <div>
+          <div">
+            <label for="temp"> Temprature: </label>
+            <input type="number" id="temp" name="temp" />
+          </div>
+          <div">
+            <label for="from">Convert From : </label>
+            <select name="from" id="from">
+              <option value="from-c" selected>Celsium</option>
+              <option value="from-f">Fahreinheit</option>
+              <option value="from-k">Kelvin</option>
+            </select>
+          </div>
+          <div">
+            <label for="to">Convert To : </label>
+            <select name="to" id="to">
+              <option value="to-c" selected>Celsium</option>
+              <option value="to-f">Fahreinheit</option>
+              <option value="to-k">Kelvin</option>
+            </select>
+          </div>
+          <button type="button" id="b1">
+            Convert
+          </button>
+        </div>
+
+        <div>
+          <div">
+            <label for="result">Result: </label>
+            <input
+              type="text"
+              id="result"
+              name="result"
+              readonly
+            />
+          </div>
+        </div>
+        <h1>Distance Converter</h1>
+        <div>
+          <div">
+            <label for="dist"> Distance: </label>
+            <input type="number" id="dist" name="dist" />
+          </div>
+          <div">
+            <label for="distConv">Convert from : </label>
+            <select name="distConv" id="distConv">
+              <option value="k-m" selected>Kilometers to Miles</option>
+              <option value="m-k">Miles to Kilometers</option>
+            </select>
+          </div>
+          <button type="button" id="b2">
+            Convert
+          </button>
+          <div>
+            <label for="result2">Result: </label>
+            <input
+              type="text"
+              id="result2"
+              name="result2"
+              readonly
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="dist/app.js"></script>
+  </body>
+</html>
